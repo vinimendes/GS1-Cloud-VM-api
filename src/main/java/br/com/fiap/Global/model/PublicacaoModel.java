@@ -36,7 +36,6 @@ public class PublicacaoModel implements Serializable{
 	
 	public PublicacaoModel() {}
 
-
 	public PublicacaoModel(int id_publicacao, UsuarioModel id_usuario, String nm_titulo, String ds_conteudo,
 			String ds_assunto) {
 		super();
@@ -46,6 +45,8 @@ public class PublicacaoModel implements Serializable{
 		this.ds_conteudo = ds_conteudo;
 		this.ds_assunto = ds_assunto;
 	}
+	
+	
 
 
 	public int getId_publicacao() {

@@ -34,5 +34,13 @@ public class UsuarioService {
 	public Optional<UsuarioModel> findByEmail(String email) {
 		return usuarioRepository.findByEmail(email);
 	}
+
+	public Optional<UsuarioModel> findById(int id) {
+		return usuarioRepository.findById(id);
+	}
+
+	public void delete(UsuarioModel usuarioModel) {
+		usuarioRepository.delete(usuarioModel);
+	}
 	
 }

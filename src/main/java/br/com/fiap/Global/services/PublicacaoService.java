@@ -1,6 +1,7 @@
 package br.com.fiap.Global.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -27,6 +28,14 @@ public class PublicacaoService {
 
 	public List<PublicacaoModel> findAll() {
 		return publicacaoRepository.findAll();
+	}
+
+	public Optional<PublicacaoModel> findById(int id) {
+		return publicacaoRepository.findById(id);
+	}
+
+	public void delete(PublicacaoModel publicacaoModel) {
+		publicacaoRepository.delete(publicacaoModel);
 	}
 	
 	

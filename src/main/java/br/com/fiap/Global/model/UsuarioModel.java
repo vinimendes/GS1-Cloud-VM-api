@@ -2,6 +2,10 @@ package br.com.fiap.Global.model;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonSetter;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -39,7 +43,7 @@ public class UsuarioModel implements Serializable{
 	
 	public UsuarioModel() {}
 
-
+	
 	public UsuarioModel(int id_usuario, String nm_completo, String nm_username, String ds_email, String ds_senha,
 			String ds_estado) {
 		super();
@@ -56,7 +60,7 @@ public class UsuarioModel implements Serializable{
 		return id_usuario;
 	}
 
-
+	
 	public void setId_usuario(int id_usuario) {
 		this.id_usuario = id_usuario;
 	}
